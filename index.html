@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burger Palace | Menú</title>
+
+    <!-- Importacion de GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Seteo de icono -->
+    <link rel="icon" href="/assets/icono.png">
+
+    <!-- Importacion de archivo CSS (Estilos) -->
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+    
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <img id="icono-principal" src="./assets/icono.png" alt="Logo Hamburguesería" />
+        <h1 id="titulo-principal">Burger Palace</h1>
+
+        <nav id="listado-opciones">
+            <a href="">Inicio</a>
+            <a href="#hamburguesas">Hamburguesas</a>
+            <a href="#bebidas">Bebidas</a>
+            <a href="#tragos">Tragos</a>
+            <a href="./pages/carrito/carrito.html">Mi carrito</a>
+        </nav>
+    </header>
+    <!-- Contenido principal de la pagina -->
+    <main>
+        <!-- Seccion de Hamburguesas -->
+        <section id="hamburguesas">
+            <h2 class="h2-separador">Hamburguesas 🍔</h2>
+            <ul id="listado-hamburguesas">
+               <!-- <li class="li-hamburguesa">
+                    <img class="img-producto" src="./assets/hamburguesas/burga-5.jpg" alt="hamburguesa-5">
+                    <div>
+                        <h3 class="nombre-producto">La Bestia</h3>
+                        <p class="precio-producto">$19000</p>
+                        <p class="descripcion-producto">Quíntuple medallón de carne, 5 capas de cheddar, panceta en
+                            cada piso, cheddar en cada piso, queso especial derretido y pan con queso gratinado.</p>
+                    </div>
+                 onclick() es un evento que se ejecuta cuando el usuario hace click sobre un elemento HTML. 
+                    <button class="btn-sumar-a-carrito" onclick="sumarAlCarrito()"> + </button>
+                    <button class="btn-restar-a-carrito" onclick="restarDelCarrito()"> - </button>
+                </li>-->
+            </ul>
+        </section>
+
+        <!-- Seccion de Bebidas -->
+        <section id="bebidas">
+            <h2 class="h2-separador">Bebidas 🍺</h2>
+            <ul id="listado-bebidas">
+                
+            </ul>
+        </section>
+
+        <!-- Seccion de Tragos -->
+        <section id="tragos">
+            <h2 class="h2-separador">Tragos 🍸</h2>
+            <ul id="listado-tragos">
+                
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados | Burger Palace 2026</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
