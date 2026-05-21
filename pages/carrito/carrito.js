@@ -15,6 +15,12 @@ function cargarProductosCarrito() {
 
     if(carrito.length === 0){
         document.getElementById("valor-final").textContent = "el valor total es 0";
+        tabla.innerHTML = `
+                <tr class="fila-header-carrito">
+                    <td class="celda-header-tabla-carrito">Nombre del producto</td>
+                    <td class="celda-header-tabla-carrito">Cantidad</td>
+                    <td class="celda-header-tabla-carrito">Precio unitario</td>
+                </tr>`
         return;
     }
 
@@ -35,7 +41,7 @@ function cargarProductosCarrito() {
     document.getElementById("valor-final").textContent = "El valor final a pagar es de $"+total;
 }
 
-cargarProductosCarrito();
+
 
 function limpiarCarrito() 
 {
@@ -43,3 +49,4 @@ function limpiarCarrito()
     alert("Carrito limpiado correctamente");
     cargarProductosCarrito();
 }
+cargarProductosCarrito();
